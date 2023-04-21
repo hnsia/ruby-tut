@@ -9,6 +9,9 @@
         turbo_confirm: "Are you sure?"
     } %></li>
 </ul>
+<% @article.comments.each do |comment| %>
+    <p><%= comment.body %></P>
+<% end %>
 
 <h2>Comments</h2>
 <% render @article.comments %>
